@@ -1,4 +1,4 @@
-package repositories;
+package radiocare.repositories;
 
 public class PatientDAO {
 	

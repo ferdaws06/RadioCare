@@ -1,4 +1,4 @@
-package controllers;
+package radiocare.controllers;
 
 public class PatientController {
 

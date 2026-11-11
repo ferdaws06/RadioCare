@@ -1,4 +1,4 @@
-package entities;
+package radiocare.entities;
 
 import java.time.LocalDate;
 
