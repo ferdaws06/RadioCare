@@ -5,16 +5,30 @@ public class SalleRadiologie extends Ressource {
 	private int numeroEtage;
 	private String typeSalle;
 	private String equipementAttributID;
+	private String normeBlindagePlomb;
 	private boolean statutDispo;
 	public SalleRadiologie(String id, String nom, int numeroEtage, String typeSalle, String equipementAttributID,
-			boolean statutDispo) {
+			String normeBlindagePlomb, boolean statutDispo) {
 		super(id);
 		this.nom = nom;
 		this.numeroEtage = numeroEtage;
 		this.typeSalle = typeSalle;
 		this.equipementAttributID = equipementAttributID;
+		this.normeBlindagePlomb = normeBlindagePlomb;
 		this.statutDispo = statutDispo;
 	}
+
+
+	public String getNormeBlindagePlomb() {
+		return normeBlindagePlomb;
+	}
+
+
+	public void setNormeBlindagePlomb(String normeBlindagePlomb) {
+		this.normeBlindagePlomb = normeBlindagePlomb;
+	}
+
+
 	public String getNom() {
 		return nom;
 	}
