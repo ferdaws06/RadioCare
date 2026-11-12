@@ -3,13 +3,13 @@ package radiocare.entities;
 import java.time.LocalDate;
 
 public class Paiement {
-	private String idPaiement;
+	private int idPaiement;
 	private int numFacture;
 	private LocalDate datePaiement;
 	private double montantRecu;
 	private String modePaiement;
 	private String referenceTextuellePreuve;
-	public Paiement(String idPaiement, int numFacture, LocalDate datePaiement, double montantRecu, String modePaiement,
+	public Paiement(int idPaiement, int numFacture, LocalDate datePaiement, double montantRecu, String modePaiement,
 			String referenceTextuellePreuve) {
 		super();
 		this.idPaiement = idPaiement;
@@ -19,10 +19,10 @@ public class Paiement {
 		this.modePaiement = modePaiement;
 		this.referenceTextuellePreuve = referenceTextuellePreuve;
 	}
-	public String getIdPaiement() {
+	public int getIdPaiement() {
 		return idPaiement;
 	}
-	public void setIdPaiement(String idPaiement) {
+	public void setIdPaiement(int idPaiement) {
 		this.idPaiement = idPaiement;
 	}
 	public int getNumFacture() {

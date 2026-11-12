@@ -7,7 +7,7 @@ public class SalleRadiologie extends Ressource {
 	private String equipementAttributID;
 	private String normeBlindagePlomb;
 	private boolean statutDispo;
-	public SalleRadiologie(String id, String nom, int numeroEtage, String typeSalle, String equipementAttributID,
+	public SalleRadiologie(int id, String nom, int numeroEtage, String typeSalle, String equipementAttributID,
 			String normeBlindagePlomb, boolean statutDispo) {
 		super(id);
 		this.nom = nom;

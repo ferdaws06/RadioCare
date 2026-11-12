@@ -6,7 +6,7 @@ public class EquipementImagerie extends Ressource{
 	private int heuresCumulees;
 	private int heuresRestantesMaintenance;
 	private String statut;
-	public EquipementImagerie(String id, String type, String marque, int heuresCumulees, int heuresRestantesMaintenance,
+	public EquipementImagerie(int id, String type, String marque, int heuresCumulees, int heuresRestantesMaintenance,
 			String statut) {
 		super(id);
 		this.type = type;
