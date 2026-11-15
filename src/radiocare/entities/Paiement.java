@@ -9,6 +9,9 @@ public class Paiement {
 	private double montantRecu;
 	private String modePaiement;
 	private String referenceTextuellePreuve;
+	
+	public Paiement() {};
+	
 	public Paiement(int idPaiement, int numFacture, LocalDate datePaiement, double montantRecu, String modePaiement,
 			String referenceTextuellePreuve) {
 		super();

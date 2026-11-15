@@ -8,10 +8,16 @@ public class CompteRenduMedical {
 	private LocalDate Date;
 	private String RefOrdonnanceTextuelle;
 	private String TranscriptionDiagnosticTextuel;
-	private String CodeResultat ;
+	private CodeRes CodeResultat ;
+	
+	public enum CodeRes{         //liste des valeurs autorises//
+		normal,anomalie,urgent
+	}
+	
+	public CompteRenduMedical() {};
 	
 	public CompteRenduMedical(int iD_CompteRendu, int iD_Rdv, LocalDate date, String refOrdonnanceTextuelle,
-			String transcriptionDiagnosticTextuel, String codeResultat) {
+			String transcriptionDiagnosticTextuel, CodeRes codeResultat) {
 		super();
 		ID_CompteRendu = iD_CompteRendu;
 		ID_Rdv = iD_Rdv;
@@ -61,11 +67,11 @@ public class CompteRenduMedical {
 		TranscriptionDiagnosticTextuel = transcriptionDiagnosticTextuel;
 	}
 
-	public String getCodeResultat() {
+	public CodeRes getCodeResultat() {
 		return CodeResultat;
 	}
 
-	public void setCodeResultat(String codeResultat) {
+	public void setCodeResultat(CodeRes codeResultat) {
 		CodeResultat = codeResultat;
 	}
 	

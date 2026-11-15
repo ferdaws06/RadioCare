@@ -12,9 +12,17 @@ public class RendezVous {
 	private int idManip;
 	private int idSalle;
 	private int idExamen;
-	private String status;
+	private StatusRdv status;
+	
+	public enum StatusRdv{
+		planifié,en_cours,realise,annule
+		
+	}
+	
+	public RendezVous() {};
+	
 	public RendezVous(int idRdv, LocalDate date, int heureDebut, int dureeMinutes, int idPatient, int idMedecin,
-			int idManip, int idSalle, int idExamen, String status) {
+			int idManip, int idSalle, int idExamen, StatusRdv status) {
 		super();
 		this.idRdv = idRdv;
 		this.date = date;
@@ -81,10 +89,10 @@ public class RendezVous {
 	public void setIdExamen(int idExamen) {
 		this.idExamen = idExamen;
 	}
-	public String getStatus() {
+	public StatusRdv getStatus() {
 		return status;
 	}
-	public void setStatus(String status) {
+	public void setStatus(StatusRdv status) {
 		this.status = status;
 	}
 	

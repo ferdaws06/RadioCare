@@ -15,6 +15,8 @@ public class MedecinRadiologue extends Personnel{
 		DispoPlanning = dispoPlanning;
 	}
 	
+	public MedecinRadiologue() {};
+	
 	public String getSpécialité() {
 		return Spécialité;
 	}

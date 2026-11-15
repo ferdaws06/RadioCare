@@ -56,6 +56,8 @@ public class Patient extends Personne {
 		HistoriqueExamensIDs = historiqueExamensIDs;
 	}
 	
+	public Patient() {};
+	
 	public Patient(String nom, String prenom, String cIN_Matricule, LocalDate dateNaissance, int téléphone,
 			String email, int numAssurance, double soldeCompte, List<String> historiqueExamensIDs) {
 		super(nom, prenom);

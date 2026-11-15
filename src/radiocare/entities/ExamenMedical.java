@@ -7,6 +7,9 @@ public class ExamenMedical {
 	private int DureeEstimeeMinutes;
 	private double TarifHT; 
 	
+	
+	public ExamenMedical() {};
+	
 	public ExamenMedical(int iD_Examen, int codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT) {
 		super();
 		ID_Examen = iD_Examen;

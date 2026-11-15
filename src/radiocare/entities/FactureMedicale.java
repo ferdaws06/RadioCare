@@ -9,9 +9,16 @@ public class FactureMedicale {
 	private double tauxTTC;
 	private double partAssurance;
 	private double tauxPatient;
-	private String statutPaiement;
+	private StatutP statutPaiement;
+	
+	public enum StatutP{
+		payé,non_payé
+	}
+	
+	public FactureMedicale() {};
+	
 	public FactureMedicale(int numFacture, String idPatient, int idRdv, double montantHT, double tauxTva,
-			double tauxTTC, double partAssurance, double tauxPatient, String statutPaiement) {
+			double tauxTTC, double partAssurance, double tauxPatient, StatutP statutPaiement) {
 		super();
 		this.numFacture = numFacture;
 		this.idPatient = idPatient;
@@ -71,10 +78,10 @@ public class FactureMedicale {
 	public void setTauxPatient(double tauxPatient) {
 		this.tauxPatient = tauxPatient;
 	}
-	public String getStatutPaiement() {
+	public StatutP getStatutPaiement() {
 		return statutPaiement;
 	}
-	public void setStatutPaiement(String statutPaiement) {
+	public void setStatutPaiement(StatutP statutPaiement) {
 		this.statutPaiement = statutPaiement;
 	}
 	

@@ -13,6 +13,8 @@ public class ManipulateurRadio extends Personnel{
 		StatutDispo = statutDispo;
 	}
 
+	public ManipulateurRadio() {};
+	
 	public String getHabilitations() {
 		return Habilitations;
 	}

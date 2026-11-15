@@ -3,6 +3,9 @@ package radiocare.entities;
 public abstract class Ressource {
 	protected int id;
 
+	
+	public Ressource() {};
+	
 	public Ressource(int id) {
 		super();
 		this.id = id;

@@ -15,6 +15,9 @@ public class Personnel extends Personne {
 	public void setCIN(int cIN) {
 		CIN = cIN;
 	}
+	
+	public Personnel() {};
+	
 	public Personnel(String nom, String prenom, int iD, int cIN) {
 		super(nom, prenom);
 		ID = iD;

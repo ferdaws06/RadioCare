@@ -5,9 +5,16 @@ public class EquipementImagerie extends Ressource{
 	private String marque;
 	private int heuresCumulees;
 	private int heuresRestantesMaintenance;
-	private String statut;
+	private StatutEqIm statut;
+	
+	public enum StatutEqIm{
+		en_service,en_panne,en_maintenance
+	}
+	
+	public EquipementImagerie() {};
+	
 	public EquipementImagerie(int id, String type, String marque, int heuresCumulees, int heuresRestantesMaintenance,
-			String statut) {
+			StatutEqIm statut) {
 		super(id);
 		this.type = type;
 		this.marque = marque;
@@ -39,10 +46,10 @@ public class EquipementImagerie extends Ressource{
 	public void setHeuresRestantesMaintenance(int heuresRestantesMaintenance) {
 		this.heuresRestantesMaintenance = heuresRestantesMaintenance;
 	}
-	public String getStatut() {
+	public StatutEqIm getStatut() {
 		return statut;
 	}
-	public void setStatut(String statut) {
+	public void setStatut(StatutEqIm statut) {
 		this.statut = statut;
 	}
 	
