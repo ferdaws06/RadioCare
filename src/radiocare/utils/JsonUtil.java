@@ -1,4 +1,4 @@
-package radiocare.utils;
+  package radiocare.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -25,7 +25,7 @@ public class JsonUtil {
      * @param fichier nom du fichier (ex: "patients.json")
      * @param classe  type des objets (ex: Patient.class)
      */
-    public static <T> List<T> lire(String fichier, Class<T> classe) {
+    public static <T> List<T> lire(String fichier, Class<T> classe) { //<t>type generique
         File f = new File(fichier);
 
         // Si le fichier n'existe pas encore, on renvoie une liste vide
