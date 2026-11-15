@@ -21,7 +21,7 @@ public class LocalDateAdapter extends TypeAdapter<LocalDate> {
 
     @Override
     public LocalDate read(JsonReader in) throws IOException {
-        if (in.peek() == JsonToken.NULL) { in.nextNull(); return null; }
-        return LocalDate.parse(in.nextString());
+        if (in.peek() == JsonToken.NULL) { in.nextNull(); return null; }//in.peek() retourne type de next element arrive au json 
+        return LocalDate.parse(in.nextString());//changer le string au typa date
     }
 }
