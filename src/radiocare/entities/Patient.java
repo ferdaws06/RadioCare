@@ -7,17 +7,17 @@ import java.util.List;
 
 public class Patient extends Personne {
 	
-	private String CIN_Matricule;
+	private int CIN_Matricule;
 	private LocalDate DateNaissance;
 	private int Téléphone;
 	private String Email;
 	private int NumAssurance;
 	private double SoldeCompte;
 	private List<String> HistoriqueExamensIDs;
-	public String getCIN_Matricule() {
+	public int getCIN_Matricule() {
 		return CIN_Matricule;
 	}
-	public void setCIN_Matricule(String cIN_Matricule) {
+	public void setCIN_Matricule(int cIN_Matricule) {
 		CIN_Matricule = cIN_Matricule;
 	}
 	public LocalDate getDateNaissance() {
@@ -59,7 +59,7 @@ public class Patient extends Personne {
 	
 	public Patient() {};
 	
-	public Patient(String nom, String prenom, String cIN_Matricule, LocalDate dateNaissance, int téléphone,
+	public Patient(String nom, String prenom, int cIN_Matricule, LocalDate dateNaissance, int téléphone,
 			String email, int numAssurance, double soldeCompte, List<String> historiqueExamensIDs) {
 		super(nom, prenom);
 		CIN_Matricule = cIN_Matricule;
