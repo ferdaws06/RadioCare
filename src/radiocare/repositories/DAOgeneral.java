@@ -2,7 +2,7 @@ package radiocare.repositories;
 
 import java.util.List;
 
-import radiocare.exceptions.ConflitException;
+import radiocare.services.ConflitException;
 import radiocare.utils.JsonUtil;
 
 public abstract class DAOgeneral <T> {

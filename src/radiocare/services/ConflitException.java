@@ -1,4 +1,4 @@
-package radiocare.exceptions;
+package radiocare.services;
 
 public class ConflitException extends MetierException {
 
