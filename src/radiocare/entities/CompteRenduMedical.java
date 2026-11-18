@@ -30,6 +30,7 @@ public class CompteRenduMedical {
 	public int getID_CompteRendu() {
 		return ID_CompteRendu;
 	}
+	
 
 	public void setID_CompteRendu(int iD_CompteRendu) {
 		ID_CompteRendu = iD_CompteRendu;

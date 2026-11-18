@@ -3,15 +3,14 @@ package radiocare.services;
 import radiocare.entities.Patient;
 import radiocare.repositories.PatientDAO;
 
-public class PatientService {
-	private final PatientDAO dao;
-
-	public PatientService(PatientDAO dao) {
-		super();
-		this.dao = dao;
+public class PatientService extends ServiceGeneral <Patient> {
+	
+	public PatientService() {
+		super(new PatientDAO());
 	}
 	
 	//test de validation 
+	 @Override
 	 public void valider(Patient p) {
 		 if(p.getCIN_Matricule()==0|| p.getCIN_Matricule() >99999999) {
 			 throw new IllegalArgumentException("CIN non valide");
@@ -34,35 +33,20 @@ public class PatientService {
 		 
 	 }
 	 
-	 public void ajouter(Patient p) {
-		 valider(p);
-		 dao.ajouter(p);
+	 public void mettreAjourSolde() {
+		 
+		 
 		 
 	 }
 	 
-	 public void modifier(Patient p) {
-		 valider(p);
-		 if(dao.AfficherParID(p.getCIN_Matricule())==null) {
-			 throw new IllegalArgumentException("patient introuvable");
-		 }
-		 dao.modifier(p);
-	 }
 	 
-	 public void supprimer(Patient p) {
-		 if(dao.AfficherParID(p.getCIN_Matricule())==null) {
-			 throw new IllegalArgumentException("patient introuvable");
-		 }
-		 else {
-			 dao.supprimer(p);
-		 }
-	 }
-	 public Patient rechercher(Patient p) {
-		 return dao.AfficherParID(p.getCIN_Matricule());
-		 
+	 
+	 
+	
 	 }
 	 
 	 
 
-}
+
 
            

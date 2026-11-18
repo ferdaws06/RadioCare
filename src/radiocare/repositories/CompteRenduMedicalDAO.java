@@ -18,5 +18,4 @@ public class CompteRenduMedicalDAO extends DAOgeneral <CompteRenduMedical> {
 		entite.setID_CompteRendu(ID);
 		
 	}
-
 }
