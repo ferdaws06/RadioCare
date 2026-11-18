@@ -1,6 +1,6 @@
 package radiocare.entities;
 
-public class ExamenMedical {
+public class ExamenMedicale {
 	private int ID_Examen;
 	private int CodeActe;
 	private String Libelle;
@@ -8,9 +8,9 @@ public class ExamenMedical {
 	private double TarifHT; 
 	
 	
-	public ExamenMedical() {};
+	public ExamenMedicale() {};
 	
-	public ExamenMedical(int iD_Examen, int codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT) {
+	public ExamenMedicale(int iD_Examen, int codeActe, String libelle, int dureeEstimeeMinutes, double tarifHT) {
 		super();
 		ID_Examen = iD_Examen;
 		CodeActe = codeActe;
