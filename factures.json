@@ -1,0 +1,47 @@
+[
+  {
+    "numFacture": 2,
+    "idRdv": 0,
+    "montantHT": 0.0,
+    "tauxTva": 0.0,
+    "tauxTTC": 0.0,
+    "partAssurance": 0.0,
+    "tauxPatient": 0.0
+  },
+  {
+    "numFacture": 3,
+    "idRdv": 0,
+    "montantHT": 0.0,
+    "tauxTva": 0.0,
+    "tauxTTC": 0.0,
+    "partAssurance": 0.0,
+    "tauxPatient": 0.0
+  },
+  {
+    "numFacture": 4,
+    "idRdv": 0,
+    "montantHT": 0.0,
+    "tauxTva": 0.0,
+    "tauxTTC": 0.0,
+    "partAssurance": 0.0,
+    "tauxPatient": 0.0
+  },
+  {
+    "numFacture": 5,
+    "idRdv": 0,
+    "montantHT": 0.0,
+    "tauxTva": 0.0,
+    "tauxTTC": 0.0,
+    "partAssurance": 0.0,
+    "tauxPatient": 0.0
+  },
+  {
+    "numFacture": 6,
+    "idRdv": 0,
+    "montantHT": 0.0,
+    "tauxTva": 0.0,
+    "tauxTTC": 0.0,
+    "partAssurance": 0.0,
+    "tauxPatient": 0.0
+  }
+]

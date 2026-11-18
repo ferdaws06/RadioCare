@@ -4,7 +4,7 @@ import radiocare.entities.ExamenMedicale;
 
 public class ExamenMedicalDAO extends DAOgeneral <ExamenMedicale>{
 
-	public ExamenMedicalDAO(String fichier, Class<ExamenMedicale> classe) {
+	public ExamenMedicalDAO() {
 		super("exames.json", ExamenMedicale.class);
 		
 	

@@ -26,14 +26,21 @@ public abstract class DAOgeneral <T> {
 	//create (ADD)
 		public void ajouter(T entite){
 			List<T> liste= AfficherTout();
+			int maxId = 0;
 			for (int i=0;i< liste.size();i++) {
+				int currentId = getID(liste.get(i)); 
 				if(getID(liste.get(i))==getID(entite)) {
 					throw new ConflitException("ce id "+getID(entite)+"deja exist");
 				}
-				else {
-					liste.add(entite);
-				}
+				if (currentId > maxId) {
+		            maxId = currentId;
+		        }
 			}
+			// Générer l'ID automatiquement (1, 2, 3...)
+			if (getID(entite) == 0) {
+		        setID(entite, maxId + 1);
+		    }
+			liste.add(entite);
 			JsonUtil.ecrire(fichier, liste);
 		}
 	
@@ -56,7 +63,9 @@ public abstract class DAOgeneral <T> {
 	}
 	// update 
 	public void modifier(T entite) {
+		if (entite == null) return;
 		List<T> liste= AfficherTout();
+		
 		for (int i=0;i< liste.size();i++) {
 			if(getID(liste.get(i))==getID(entite)) {  //get et set predefinie  dans util.list
 				liste.set(i,entite);
@@ -71,12 +80,15 @@ public abstract class DAOgeneral <T> {
 	
 	//delete
 	public void supprimer(T entite){
+		if (entite == null) return;
 		List<T> liste= AfficherTout();
 		for (int i=0;i< liste.size();i++) {
 			if(getID(liste.get(i))==getID(entite)) {
 				liste.remove(i);
+				break;
 			}
 		}
+		JsonUtil.ecrire(fichier, liste);
 		}
 	
 	

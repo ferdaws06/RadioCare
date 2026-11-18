@@ -2,9 +2,9 @@ package radiocare.repositories;
 
 import radiocare.entities.FactureMedicale;
 
-public abstract class FactureMedicaleDAO extends DAOgeneral <FactureMedicale> {
+public class FactureMedicaleDAO extends DAOgeneral <FactureMedicale> {
 
-	public FactureMedicaleDAO(String fichier, Class<FactureMedicale> classe) {
+	public FactureMedicaleDAO() {
 		super("factures.json", FactureMedicale.class);
 		
 	}

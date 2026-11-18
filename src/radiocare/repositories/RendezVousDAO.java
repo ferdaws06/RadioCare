@@ -4,7 +4,7 @@ import radiocare.entities.RendezVous;
 
 public class RendezVousDAO extends DAOgeneral<RendezVous> {
 
-	public RendezVousDAO(String fichier, Class<RendezVous> classe) {
+	public RendezVousDAO() {
 		super("rendezvous.json", RendezVous.class);
 
 	}

@@ -1,0 +1,27 @@
+[
+  {
+    "idPaiement": 2,
+    "numFacture": 0,
+    "montantRecu": 0.0
+  },
+  {
+    "idPaiement": 3,
+    "numFacture": 0,
+    "montantRecu": 0.0
+  },
+  {
+    "idPaiement": 4,
+    "numFacture": 0,
+    "montantRecu": 0.0
+  },
+  {
+    "idPaiement": 5,
+    "numFacture": 0,
+    "montantRecu": 0.0
+  },
+  {
+    "idPaiement": 6,
+    "numFacture": 0,
+    "montantRecu": 0.0
+  }
+]

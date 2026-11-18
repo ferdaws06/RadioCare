@@ -4,7 +4,7 @@ import radiocare.entities.Paiement;
 
 public class PaiementDAO extends DAOgeneral <Paiement>{
 
-	public PaiementDAO(String fichier, Class<Paiement> classe) {
+	public PaiementDAO() {
 		super("Paiement.json",Paiement.class);
 	
 	}
