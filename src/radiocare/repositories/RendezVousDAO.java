@@ -1,5 +1,23 @@
 package radiocare.repositories;
 
-public class RendezVousDAO {
+import radiocare.entities.RendezVous;
+
+public class RendezVousDAO extends DAOgeneral<RendezVous> {
+
+	public RendezVousDAO(String fichier, Class<RendezVous> classe) {
+		super("rendezvous.json", RendezVous.class);
+
+	}
+
+	@Override
+	public int getID(RendezVous entite) {
+		return entite.getIdRdv();
+	}
+
+	@Override
+	public void setID(RendezVous entite, int ID) {
+		entite.setIdRdv(ID);
+		
+	}
 
 }
