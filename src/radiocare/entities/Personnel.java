@@ -3,6 +3,7 @@ package radiocare.entities;
 public class Personnel extends Personne {
 	protected int ID;
 	protected int CIN;
+	
 	public int getID() {
 		return ID;
 	}
