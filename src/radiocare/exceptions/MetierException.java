@@ -1,4 +1,4 @@
-package radiocare.services;
+package radiocare.exceptions;
 
 public class MetierException extends RuntimeException {
 
