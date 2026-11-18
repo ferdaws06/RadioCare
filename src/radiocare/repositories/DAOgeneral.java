@@ -26,20 +26,12 @@ public abstract class DAOgeneral <T> {
 	//create (ADD)
 		public void ajouter(T entite){
 			List<T> liste= AfficherTout();
-			int maxId = 0;
-			for (int i=0;i< liste.size();i++) {
-				int currentId = getID(liste.get(i)); 
+			for (int i=0;i< liste.size();i++) { 
 				if(getID(liste.get(i))==getID(entite)) {
 					throw new ConflitException("ce id "+getID(entite)+"deja exist");
 				}
-				if (currentId > maxId) {
-		            maxId = currentId;
-		        }
+			
 			}
-			// Générer l'ID automatiquement (1, 2, 3...)
-			if (getID(entite) == 0) {
-		        setID(entite, maxId + 1);
-		    }
 			liste.add(entite);
 			JsonUtil.ecrire(fichier, liste);
 		}
