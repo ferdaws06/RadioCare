@@ -3,10 +3,10 @@ package radiocare.entities;
 public class ManipulateurRadio extends Personnel{
 	private String Habilitations;
 	private double TarifHoraire;
-	private boolean StatutDispo;
+	private String StatutDispo;
 	
 	public ManipulateurRadio(String nom, String prenom, int iD, int cIN, String habilitations, double tarifHoraire,
-			boolean statutDispo) {
+			String statutDispo) {
 		super(nom, prenom, iD, cIN);
 		Habilitations = habilitations;
 		TarifHoraire = tarifHoraire;
@@ -31,13 +31,14 @@ public class ManipulateurRadio extends Personnel{
 		TarifHoraire = tarifHoraire;
 	}
 
-	public boolean isStatutDispo() {
+	public String getStatutDispo() {
 		return StatutDispo;
 	}
 
-	public void setStatutDispo(boolean statutDispo) {
+	public void setStatutDispo(String statutDispo) {
 		StatutDispo = statutDispo;
 	}
+	
 	
 	
 	

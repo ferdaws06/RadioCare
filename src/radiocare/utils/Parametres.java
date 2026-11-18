@@ -12,5 +12,11 @@ public class Parametres {
 
 	public static final List<String> Status_salle =
 	       List.of("Disponible", "Occupee", "Maintenance");
+
 	public static final double heure_alerte_maintenance=10;
+
+	public static final List<String> statutDispo =
+			List.of("disponible","non_disponible");
+			
+
 }
