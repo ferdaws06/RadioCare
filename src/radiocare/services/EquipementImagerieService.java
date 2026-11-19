@@ -1,5 +1,6 @@
 package radiocare.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import radiocare.entities.EquipementImagerie;
@@ -54,11 +55,19 @@ public class EquipementImagerieService extends ServiceGeneral<EquipementImagerie
 			e.setHeuresCumulees(e.getHeuresCumulees()+heures);
 			e.setHeuresRestantesMaintenance(e.getHeuresRestantesMaintenance()-heures);
 			dao.modifier(e);
+		}
 			
 	// alerte en cas d'échéance proche
-			public List<EquipementImagerie> equipementEnalerte  {
-				
-}
+			public List<EquipementImagerie> equipementEnAlerte () {
+				List <EquipementImagerie> equipementEnAlerte = new ArrayList<>();
+				for( EquipementImagerie e :dao.AfficherTout()  ) {
+					if (e.getHeuresRestantesMaintenance() <= Parametres.heure_alerte_maintenance) {
+						equipementEnAlerte.add(e);
+					}
+				}
+				return  equipementEnAlerte;
+			}
+
 	
 
 }
