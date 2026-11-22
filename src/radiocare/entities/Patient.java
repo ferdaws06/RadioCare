@@ -13,7 +13,7 @@ public class Patient extends Personne {
 	private String Email;
 	private int NumAssurance;
 	private double SoldeCompte;
-	private List<String> HistoriqueExamensIDs;
+	private int[] HistoriqueExamensIDs;  // un nov patient avoir historique vide au lieu de null par defaut 
 	public int getCIN_Matricule() {
 		return CIN_Matricule;
 	}
@@ -50,27 +50,33 @@ public class Patient extends Personne {
 	public void setSoldeCompte(double soldeCompte) {
 		SoldeCompte = soldeCompte;
 	}
-	public List<String> getHistoriqueExamensIDs() {
+	public int[] getHistoriqueExamensIDs() {
 		return HistoriqueExamensIDs;
 	}
-	public void setHistoriqueExamensIDs(List<String> historiqueExamensIDs) {
+	public void setHistoriqueExamensIDs(int[] historiqueExamensIDs) {
 		HistoriqueExamensIDs = historiqueExamensIDs;
 	}
 	
-	public Patient() {};
+	public Patient() {}; // pour la fichier json
 	
 	public Patient(String nom, String prenom, int cIN_Matricule, LocalDate dateNaissance, int téléphone,
-			String email, int numAssurance, double soldeCompte, List<String> historiqueExamensIDs) {
+			String email, int numAssurance) {
 		super(nom, prenom);
 		CIN_Matricule = cIN_Matricule;
 		DateNaissance = dateNaissance;
 		Téléphone = téléphone;
 		Email = email;
 		NumAssurance = numAssurance;
-		SoldeCompte = soldeCompte;
-		HistoriqueExamensIDs = historiqueExamensIDs;
+		SoldeCompte = 0;
+		HistoriqueExamensIDs =new int[0];
 	}
 	
+	
+	//pour tester rapidement la creation d'un patient
+	public String toString() {
+		return CIN_Matricule +"|"+nom+" "+prenom +"|"+Téléphone+"|"+Email;
+		
+	}
 	
 
 

@@ -1,7 +1,7 @@
 package radiocare.entities;
 
 public class ManipulateurRadio extends Personnel{
-	private String Habilitations;
+	private String Habilitations;    
 	private double TarifHoraire;
 	private String StatutDispo;
 	
@@ -31,7 +31,7 @@ public class ManipulateurRadio extends Personnel{
 		TarifHoraire = tarifHoraire;
 	}
 
-	public String getStatutDispo() {
+	public String getStatutDispo() { 
 		return StatutDispo;
 	}
 

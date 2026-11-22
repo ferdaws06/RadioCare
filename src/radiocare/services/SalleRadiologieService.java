@@ -1,4 +1,4 @@
-package radiocare.services;
+/**package radiocare.services;
 
 
 import radiocare.entities.SalleRadiologie;
@@ -22,4 +22,4 @@ public class SalleRadiologieService extends ServiceGeneral<SalleRadiologie>{
 	}
 	
 
-}
+}*/

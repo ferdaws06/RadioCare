@@ -1,4 +1,4 @@
-package radiocare.services;
+/**package radiocare.services;
 
 import radiocare.entities.CompteRenduMedical;
 import radiocare.entities.Patient;
@@ -7,10 +7,10 @@ import radiocare.repositories.CompteRenduMedicalDAO;
 import radiocare.repositories.DAOgeneral;
 import radiocare.repositories.RendezVousDAO;
 
-public class CompteRenduMedicalService extends ServiceGeneral <CompteRenduMedical> {
+//public class CompteRenduMedicalService extends ServiceGeneral <CompteRenduMedical> {
 	final RendezVousDAO rdvDAO=new RendezVousDAO();
 	public CompteRenduMedicalService() {
-		super(new CompteRenduMedicalDAO());
+		
 		
 	}
 
@@ -46,7 +46,7 @@ public class CompteRenduMedicalService extends ServiceGeneral <CompteRenduMedica
 	
 		}
 		
-	}
+	}*/
 
 
 	

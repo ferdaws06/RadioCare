@@ -1,4 +1,4 @@
-package radiocare.services;
+/**package radiocare.services;
 import java.util.List;
 
 import radiocare.repositories.DAOgeneral;
@@ -52,4 +52,4 @@ public abstract class ServiceGeneral<T> {
 	}
 	
 
-}
+}*/

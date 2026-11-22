@@ -1,4 +1,4 @@
-package radiocare.services;
+/**package radiocare.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,4 +70,4 @@ public class EquipementImagerieService extends ServiceGeneral<EquipementImagerie
 
 	
 
-}
+}*/

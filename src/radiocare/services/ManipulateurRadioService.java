@@ -1,7 +1,9 @@
-package radiocare.services;
+/**package radiocare.services;
 import radiocare.repositories.ManipulateurRadioDAO;
+import radiocare.repositories.RendezVousDAO;
 import radiocare.utils.Parametres;
 import radiocare.entities.ManipulateurRadio;
+import radiocare.entities.RendezVous;
 import radiocare.repositories.DAOgeneral;
 
 public class ManipulateurRadioService extends ServiceGeneral<ManipulateurRadio> {
@@ -34,7 +36,17 @@ public class ManipulateurRadioService extends ServiceGeneral<ManipulateurRadio> 
 		}
 	}
 		
-		public double calculerSalaire() {
+	
+		private final RendezVousDAO rdvDAO = new RendezVousDAO();
+		public double calculerSalaire(int id_manipulateur) {
+			for(RendezVous r:rdvDAO.AfficherTout()) {
+				if(r.getIdManip()!=id_manipulateur) {continue;}
+				
+				
+			}
+			
+			
+			
 			
 			
 			
@@ -45,4 +57,4 @@ public class ManipulateurRadioService extends ServiceGeneral<ManipulateurRadio> 
 	
 	
 
-}
+}*/
