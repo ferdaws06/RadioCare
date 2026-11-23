@@ -2,7 +2,7 @@ package radiocare.entities;
 
 public class FactureMedicale {
 	private int numFacture;
-	private String idPatient;
+	private int idPatient;
 	private int idRdv;
 	private double montantHT;
 	private double tauxTva;
@@ -14,7 +14,7 @@ public class FactureMedicale {
 	
 	public FactureMedicale() {};
 	
-	public FactureMedicale(int numFacture, String idPatient, int idRdv, double montantHT, double tauxTva,
+	public FactureMedicale(int numFacture, int idPatient, int idRdv, double montantHT, double tauxTva,
 			double tauxTTC, double partAssurance, double tauxPatient, String statutPaiement) {
 		super();
 		this.numFacture = numFacture;
@@ -33,10 +33,10 @@ public class FactureMedicale {
 	public void setNumFacture(int numFacture) {
 		this.numFacture = numFacture;
 	}
-	public String getIdPatient() {
+	public int getIdPatient() {
 		return idPatient;
 	}
-	public void setIdPatient(String idPatient) {
+	public void setIdPatient(int idPatient) {
 		this.idPatient = idPatient;
 	}
 	public int getIdRdv() {

@@ -1,6 +1,5 @@
 package radiocare.repositories;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,7 +13,7 @@ import com.google.gson.GsonBuilder;
 import radiocare.entities.Patient;
 
 public class PatientDAO {
-	private static final String  fichier ="patinets.json";
+	private static final String  fichier ="patients.json";
 	private Gson gson =new GsonBuilder().setPrettyPrinting().create();
 	                                     // fichier bien lisible 
 	private ArrayList liste=new ArrayList();

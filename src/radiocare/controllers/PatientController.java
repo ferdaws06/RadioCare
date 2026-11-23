@@ -51,7 +51,7 @@ public class PatientController {
 	}
 	
 	public ArrayList rechercherPrenom(String prenom) {
-		return service.rechercheNom(prenom);
+		return service.recherchePrenom(prenom);
 	}
 	
 	public ArrayList listerTous() {

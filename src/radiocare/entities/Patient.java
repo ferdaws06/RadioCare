@@ -17,8 +17,8 @@ public class Patient extends Personne {
 	public int getCIN_Matricule() {
 		return CIN_Matricule;
 	}
-	public void setCIN_Matricule(int cIN_Matricule) {
-		CIN_Matricule = cIN_Matricule;
+	public void setCIN_Matricule(int CIN) {
+		CIN_Matricule = CIN;
 	}
 	public LocalDate getDateNaissance() {
 		return DateNaissance;
@@ -59,14 +59,14 @@ public class Patient extends Personne {
 	
 	public Patient() {}; // pour la fichier json
 	
-	public Patient(String nom, String prenom, int cIN_Matricule, LocalDate dateNaissance, int téléphone,
-			String email, int numAssurance) {
+	public Patient(String nom, String prenom, int CIN_Matricule, LocalDate DateNaissance, int Téléphone,
+			String Email, int NumAssurance) {
 		super(nom, prenom);
-		CIN_Matricule = cIN_Matricule;
-		DateNaissance = dateNaissance;
-		Téléphone = téléphone;
-		Email = email;
-		NumAssurance = numAssurance;
+		this.CIN_Matricule = CIN_Matricule;
+		this.DateNaissance = DateNaissance;
+		this.Téléphone = Téléphone;
+		this.Email = Email;
+		this.NumAssurance = NumAssurance;
 		SoldeCompte = 0;
 		HistoriqueExamensIDs =new int[0];
 	}
@@ -78,6 +78,15 @@ public class Patient extends Personne {
 		
 	}
 	
+	// ajout d'un id examen au tableau historique examen
+	public void ajouterExamen(int idExamen) {
+	    int[] nouveau = new int[HistoriqueExamensIDs.length + 1];
+	    for (int i = 0; i < HistoriqueExamensIDs.length; i++) {
+	        nouveau[i] = HistoriqueExamensIDs[i];
+	    }
+	    nouveau[nouveau.length - 1] = idExamen;
+	    HistoriqueExamensIDs = nouveau;
+	}
 
 
 
